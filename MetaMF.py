@@ -48,7 +48,6 @@ class MetaRecommender(nn.Module):#in fact, it's not a hypernetwork
         user_emb = self.user_embedding(user_id)#input_user=[batch_size, user_emb_size]
         cf_vec = torch.matmul(user_emb, self.memory)#cf_vec=[batch_size, mem_size]
         #collaborative memory module
-        #collaborative memory module
         #meta recommender module
         output_weight = []
         output_bias = []
